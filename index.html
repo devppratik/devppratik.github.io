@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+</head>
+<body align = 'center' bgcolor="#e6f2ff">
+   <h1>Contact Form</h1> 
+   <strong>We will get in touch with you in 24 hours</strong> <br><br>
+   <form>
+    <label for="title">Title:</label>
+    <select name="title" id="title">
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Ms.">Ms.</option>
+        <option value="Dr.">Dr.</option>
+        <option value="None">-none-</option>
+    </select> <br><br>
+        
+    <label for="fname">First Name*:</label>
+    <input type="text" id="fname" name="fname" placeholder="First Name" required><br><br>
+    <label for="lname">Last Name*: </label>
+    <input type="text" id="lname" name="lname" placeholder="Last Name " required> <br><br>
+    <label for="email">Email-id*:&emsp;</label>
+    <input type="email" id="email" name="email" placeholder="Email" required><br><br>    
+    <label for="phone">Contact No:</label>
+    <input type="text" id="phone" name="phone" pattern="[0-9]{10}" required>
+    <br>&emsp;&emsp; <small>Format: 10 digit</small> 
+    <br><br>
+    <label for="msg">Message: </label><br>
+    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Your Message..."></textarea>
+    <br><br>
+    
+    <input type="submit">
+</form>
+</body>
+</html>

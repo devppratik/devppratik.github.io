@@ -13,7 +13,7 @@ body{
 }
 /* Header Styles */
 .card-header{
-    background:url(/assets/card-bg.jpg) left -90px;
+    background:url(assets/card-bg.jpg) left -90px;
     color:#fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

@@ -1,0 +1,126 @@
+body{
+    padding: 20px 10px 10px 20px;
+     background:  rgba(145,238,251,0.8) ;
+}   
+/* Basic Card Styles */
+.card{
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 155, 0.31);
+    background: #eee;
+    max-width: fit-content;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: black 2px solid;    
+}
+/* Header Styles */
+.card-header{
+    background:url(/assets/card-bg.jpg) left -90px;
+    color:#fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    display: inline-block;
+    font-weight: 100;    
+    border-bottom: 1px solid hsla(100%, 100%, 100%, 0.3);
+    margin: 0 0 0 0;
+    padding: 0 0 0.1em 0;
+}
+
+hr{
+    margin: 1px;
+    border-top: 1px solid  antiquewhite;       
+}
+
+/* Form Styles */
+.card-body{
+    padding: 10px 20px; 
+}
+
+form{
+   padding: 10px; 
+}
+
+.form-control{
+    border-radius: 10px;
+}
+
+.form-group.row{
+    margin-bottom: 8px;
+}
+
+label{
+    margin: 1px 0px;
+    min-width: 150px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;  
+    letter-spacing: 0.05em;   
+}
+
+input[type= "email"]{
+    background: url(/assets/email.png) no-repeat;
+    background-position: 5px center;
+    background-size: 15px;
+    padding: 0px 10px 0px 28px;
+    background-color: white;         
+}
+
+input[type= "number"]{
+    background: url(/assets/phone.png) no-repeat;
+    background-position: 5px center;
+    background-size: 12px;
+    padding: 0px 10px 0px 28px;
+    background-color: white;        
+}
+
+input[type='text']{
+    background: url(/assets/name.png) no-repeat;
+    background-position: 5px center;
+    background-size: 12px;
+    padding: 0px 10px 0px 28px;
+    background-color: white;       
+}
+
+input[type= "email"]:valid, input[type= "number"]:valid{
+    border: 2px solid rgb(14, 230, 14);
+}
+
+.button {
+    margin:10px 0px 10px 0px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+    display: block;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)
+}
+.button:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-position: right center;    
+}  
+
+/* Media Queries for Small Screens */
+@media only screen and (max-width:450px) {
+    h1 {
+      font-size: 2em;
+    }
+    h6{
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 0.9em;
+    }
+    .button{
+        width: 100px;
+        font-size: 12px;
+    }
+  }

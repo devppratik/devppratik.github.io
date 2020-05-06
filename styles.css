@@ -65,7 +65,7 @@ input[type= "email"]{
     background-color: white;         
 }
 
-input[type= "number"]{
+input[type= "tel"]{
     background: url(/assets/phone.png) no-repeat;
     background-position: 5px center;
     background-size: 12px;

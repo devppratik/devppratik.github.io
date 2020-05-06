@@ -81,7 +81,7 @@ input[type='text']{
     background-color: white;       
 }
 
-input[type= "email"]:valid{
+input[type= "email"]:valid, input[type= "tel"]:valid{
     border: 2px solid rgb(14, 230, 14);
 }
 

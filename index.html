@@ -6,18 +6,18 @@
     <title>Contact Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 
 <body>
-    
     <div class="card mx-auto">
         <!-- Header -->
         <div class="card-header">
             <h1>CONTACT FORM</h1> <hr>
             <h6>We will get in touch with you in 24 hours</h6>
         </div>
-
+        
         <!-- Body and main Form -->
         <div class="card-body">
             <form>
@@ -53,6 +53,7 @@
                         <label for="email">Email-id*:</label>
                         <input type="email" id="email" class = "form-control" name="email" placeholder="Email" required>
                     </div>
+                   
                 </div>
                 
                 <div class="form-group row">
@@ -74,6 +75,35 @@
             </form>    
         </div>
     </div>
+    <!-- Code to show Popup After Submit -->
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">x</div>
+            <div class="popup-content">
+                <h3>Your Message Has Been Sent</h3>
+                <img src="/assets/interface.png" alt="sent-image">
+                <p>Thank You for Contacting Us</p>
+            </div>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAiMaKdteWLnfAmLLarQ49kioENbetufZk",
+        authDomain: "javascript-d226b.firebaseapp.com",
+        databaseURL: "https://javascript-d226b.firebaseio.com",
+        projectId: "javascript-d226b",
+        storageBucket: "javascript-d226b.appspot.com",
+        messagingSenderId: "40119007671",
+        appId: "1:40119007671:web:4893f2066e35b1a0579032"
+    };
+    
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    </script>
 </body>
 </html>

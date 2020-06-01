@@ -1,0 +1,41 @@
+/* Basic Body Styles */
+body{
+    background-color: #eee;
+    text-align: center;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+/* Dark Theme Body Style */
+body.dark{
+    background-color: #0a091f;
+    color: aliceblue;
+}
+/* Styles for Button */
+button{
+    border: 4px red solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: transparent;
+    color: red;
+}
+button:focus {
+    outline: none;
+}
+
+/* Other Styles */
+.box{
+    border: 2px red solid;
+    padding: 40px;
+    border-radius: 10px;
+
+}
+
+div{
+    margin: 50px;
+}
+
+img{
+    max-width: 200px;
+}

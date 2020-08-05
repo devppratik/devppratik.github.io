@@ -2,7 +2,11 @@ const ham = document.querySelector('#mobile-link');
 const navbar = document.querySelector('.nav');
 const logo = document.querySelector('.logo');
 
+window.addEventListener('load',function(){
+    document.querySelector('body').classList.add("loaded")  
+  });
 const home = document.querySelector('.home-link');
+
 ham.addEventListener('click', (e) => {
     e.preventDefault();
     navbar.classList.toggle('show');

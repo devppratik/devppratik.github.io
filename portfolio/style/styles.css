@@ -5,6 +5,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+*:focus {
+  outline: 0;
+}
+textarea:focus, input:focus{
+  outline: 0;
+}
+:focus {
+  outline: none !important;
+}
 html,
 body {
   height: 100%;
@@ -420,7 +429,7 @@ textarea[id="message"] {
   }
   .contact-form {
     padding: 20px 30px 20px 30px;
-    max-width: 100vw;
+    max-width: 100%;
   }
   .contact-head {
     padding-top: 20px;
@@ -539,7 +548,7 @@ textarea[id="message"] {
   }
   .contact-form {
     padding: 20px 30px 20px 30px;
-    max-width: 100vw;
+    max-width: 100%;
   }
   .contact-head {
     padding-top: 20px;
@@ -570,12 +579,15 @@ textarea[id="message"] {
   html,body{
     max-width: 100%;
     overflow-x: hidden;
+    position:relative;
   }
   section {
     padding: 70px 0px 0px 0px;
-    max-width:100%;    
+    max-width:100%;   
+    overflow-x: hidden; 
   }
   #home{
+    overflow-x: hidden;
     overflow-y: hidden;
   }
   .intro-text {
@@ -607,9 +619,11 @@ textarea[id="message"] {
   .nav {
     flex-direction: row;
     top: 45px;
-    width: 110vw;
-    justify-content: space-evenly;
     animation: hide-bar 0.4s ease-in forwards;
+    width: 100%;
+    left: 100%;
+    /* display: none; */
+    justify-content: space-evenly;
     background-color: #222525;
   }
   .nav.show {
@@ -618,7 +632,7 @@ textarea[id="message"] {
     justify-content: space-evenly;
     color: azure;
     z-index: 2;
-    width: 110vw;
+    width: 100%;
     animation: show-bar 0.4s ease-in forwards;
     top: 45px;
     text-align: justify;
@@ -626,7 +640,7 @@ textarea[id="message"] {
   }
   @keyframes show-bar {
     0% {
-      left: 100vw;
+      left: 100%;
     }
     100% {
       left: 0vw;
@@ -634,11 +648,11 @@ textarea[id="message"] {
   }
   @keyframes hide-bar {
     0% {
-      display: flex;
       left: 0vw;
+      display: flex;
     }
     100% {
-      left: 100vw;
+      left: 100%;
       display: none;
     }
   }

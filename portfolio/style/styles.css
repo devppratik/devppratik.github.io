@@ -46,7 +46,7 @@ section {
   z-index: 10;
   /* smin-height: 500px; */
 }
-.logo img{
+.logo-main img{
   /* background-image: url(/portfolio/img/logos/logo-black.png); */
   position: absolute;
   width: 100px;
@@ -493,7 +493,7 @@ textarea[id="message"] {
     width: 50vw;
     height: 45px;
   }
-  .logo img{
+  .logo-main img{
      position: relative;
      left: 0;
      height: 50px;
@@ -607,7 +607,7 @@ textarea[id="message"] {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  .logo{
+  .logo-main{
     position: absolute;
   }
   .intro-text {

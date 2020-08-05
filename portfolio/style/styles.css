@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900);
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +48,7 @@ section {
   /* smin-height: 500px; */
 }
 .logo-main img{
-  /* background-image: url(/portfolio/img/logos/logo-black.png); */
+
   position: absolute;
   width: 100px;
   height: 100px;
@@ -69,10 +70,9 @@ section {
   display: none;
 }
 #nav-bar a {
-  text-decoration: aliceblue;
-  color: #fff;
+  text-decoration: rgb(160, 161, 161);
+  color: rgb(165, 165, 165);
   font-size: 20px;
-  background-size: 30px;
   padding: 0px 5px 25px 5px;
 }
 #nav-bar a span {
@@ -83,7 +83,7 @@ section {
 }
 #nav-bar a:hover > span {
   display: block;
-  color: #04c2c9;
+  color: #08fdd8;
   font-size: 9px;
   font-weight: 800;
   text-transform: uppercase;
@@ -92,18 +92,20 @@ section {
   margin: 5px;
 }
 #nav-bar a.active {
-  background: linear-gradient(to right, red, yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: border-box;
-  background-clip: padding-box;
-  background-clip: content-box;
-  background-clip: text;
+  color: #08fdd8;
+}
+.social{
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  
 }
 #nav-bar ul li {
   list-style: none;
-  padding: 0px 5px 15px 5px;
-  font-size: 15px;
+  padding: 0px 5px 25px 5px;
+  font-size: 20px;
 }
 #particles {
   margin: 0px;
@@ -493,6 +495,15 @@ textarea[id="message"] {
     width: 50vw;
     height: 45px;
   }
+  .social{
+    height: 45px;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    
+  }
   .logo-main img{
      position: relative;
      left: 0;
@@ -705,13 +716,14 @@ textarea[id="message"] {
     display: none;
   }
   #nav-bar a.active {
-    background: linear-gradient(to right, red, yellow);
-    -webkit-background-clip: text;
+    /* background: linear-gradient(to right, red, yellow); */
+    color: #08fdd8;
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: border-box;
     background-clip: padding-box;
     background-clip: content-box;
-    background-clip: text;
+    background-clip: text; */
   }
 
   .heading {

@@ -1,9 +1,9 @@
 const ham = document.querySelector('#mobile-link');
 const navbar = document.querySelector('.nav');
-const logo = document.querySelector('.logo');
+const logo = document.querySelector('.logo-main');
 
 window.addEventListener('load',function(){
-    document.querySelector('body').classList.add("loaded")  
+    document.querySelector('body').classList.add("loaded")
   });
 const home = document.querySelector('.home-link');
 

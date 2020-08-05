@@ -10,6 +10,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 body {
   background-color: #1c1c1c;
@@ -772,6 +774,10 @@ textarea[id="message"] {
 
 @media only screen and (max-width: 460px) {
   html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  section{
     max-width: 100%;
     overflow-x: hidden;
   }

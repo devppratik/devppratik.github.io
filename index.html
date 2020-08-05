@@ -1,115 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content=" width=device-width, initial-scale=1">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="popup.css">
-</head>
-
-
-<body>
-    <div class="card mx-auto">
-        <!-- Header -->
-        <div class="card-header">
-            <h1>CONTACT FORM</h1> <hr>
-            <h6>We will get in touch with you in 24 hours</h6>
-        </div>
-        
-        <!-- Body and main Form -->
-        <div class="card-body">
-            <form>
-                <div class="form-group row">
-                    <div class="col-xs-0 col-md-1"> </div>  <!-- empty div to adjust the form -->
-                    <div class="col-md-3 ">
-                        <label for="title">Title:</label>
-                        <select name="title" id="title" class="form-control custom-select">
-                            <option value="Mr.">Mr.</option>
-                            <option value="Mrs.">Mrs.</option>
-                            <option value="Ms.">Ms.</option>
-                            <option value="Dr.">Dr.</option>
-                            <option value="None">-none-</option>
-                        </select> 
-                    </div>
-                </div>
-        
-                <div class="form-group row">
-                    <div class="col-xs-0 col-md-1"> </div> <!-- empty div to adjust the form -->
-                    <div class="col-md-5">  
-                        <label for="fname">First Name*:</label>
-                        <input type="text" id="fname" class = "form-control" name="fname" placeholder="First Name" >
-                    </div>
-                    <div class="col-md-5">
-                        <label for="lname">Last Name*: </label>
-                        <input type="text" id="lname" class = "form-control" name="lname" placeholder="Last Name " >
-                    </div> 
-                
-                </div> 
-        
-                <div class="form-group row">
-                    <div class="col-xs-12 col-md-10 mx-auto">
-                        <label for="email">Email-id*:</label>
-                        <input type="email" id="email" class = "form-control" name="email" placeholder="Email" >
-                    </div>
-                   
-                </div>
-                
-                <div class="form-group row">
-                    <div class="col-xs-12 col-md-10 mx-auto">   
-                        <label for="phone">Contact No*:</label>
-                        <input type="tel" id="phone" class = "form-control" name="phone" pattern="[0-9]{10}" placeholder="Contact"  >
-                        <small class="text-muted">Must be 10 digits long.</small>
-                    </div> 
-                </div>    
-                
-                <div class="form-group row">
-                    <div class="col-xs-12 col-md-10 mx-auto">
-                        <label for="msg">Message: </label>
-                        <textarea name="message" id="msg" class = "form-control"  placeholder="Your Message..." ></textarea>
-                    </div>
-                </div>
-
-                <input type="submit" class="btn button mx-auto">
-            </form>    
-        </div>
-    </div>
-    <!-- Code to show Popup After Submit -->
-    <div class="popup-wrapper">
-        <div class="popup">
-            <div class="popup-close">x</div>
-            <div class="popup-content">
-                <h3>Your Message Has Been Sent</h3>
-                <img src="/assets/interface.png" alt="sent-image">
-                <p>Thank You for Contacting Us</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pratik Panda | Web Developer</title>
+        <link rel="stylesheet" href="/portfolio/style/styles.css">
+        <script src="https://kit.fontawesome.com/7f76f54895.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="nav-bar">
+            <nav class="nav">
+                <a class="home-link" href="/">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <!-- <a class="" href="/about.html"><i class="fas fa-user-alt"></i></a> -->
+                <a class="" href="/portfolio/skills.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Skills</span>
+                </a>
+                <a class="" href="/portfolio/projects.html">
+                    <i class="fas fa-tasks"></i>
+                    <span>Projects</span>
+                </a>
+                <a class="" href="/portfolio/contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+            <div class="social flex">
+                <ul>
+                    <li>
+                        <i class="fab fa-github"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <!-- <li><i class="fab fa-facebook-f"></i></li> -->
+                    <li>
+                        <i class="fab fa-linkedin-in"></i>
+                    </li>
+                </ul>
             </div>
+            <a href="" id="mobile-link">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
-    </div>
-
-    <script src="script.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCJ9QdtNL-u4q5hGhbYwMH6dGwATUTvrQE",
-    authDomain: "javacripts.firebaseapp.com",
-    databaseURL: "https://javacripts.firebaseio.com",
-    projectId: "javacripts",
-    storageBucket: "javacripts.appspot.com",
-    messagingSenderId: "89319879795",
-    appId: "1:89319879795:web:6b2ff61224f0b9c36ee606"
-  };
-  // Initialize Firebase  
-
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-</script>
-
-</body>
+        <section id="home" class="flex">
+            <div id="particles" class="canvas"></div>
+            <div class="flex">
+                <div class="intro-text">
+                    Hello, I'm
+                    <span class="highlight">Pratik Panda</span>
+                    <br>
+                    I'm a full-stack web developer.
+                </div>
+                <div class="button page-link">
+                    View my work
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                </div>
+            </div>
+        </section>
+        <script src="/portfolio/scripts/index.js"></script>
+        <script src="/portfolio/scripts/particles.js"></script>
+        <script>
+        particlesJS.load('particles', '/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+        </script>
+    </body>
 </html>

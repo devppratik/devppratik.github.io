@@ -46,15 +46,24 @@ section {
   z-index: 10;
   /* smin-height: 500px; */
 }
+.logo img{
+  /* background-image: url(/portfolio/img/logos/logo-black.png); */
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: -18px;
+  cursor: pointer;
+}
 .nav {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   color: azure;
   position: relative;
   z-index: 1;
-  top: 20%;
+  height: 50vh;
+
 }
 #nav-bar #mobile-link {
   display: none;
@@ -476,11 +485,19 @@ textarea[id="message"] {
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     color: azure;
     position: relative;
     z-index: 1;
-    left: 20px;
+    left: 0px;
+    width: 50vw;
+    height: 45px;
+  }
+  .logo img{
+     position: relative;
+     left: 0;
+     height: 50px;
+     width: 50px;
   }
   #nav-bar a {
     font-size: 16px;
@@ -589,6 +606,9 @@ textarea[id="message"] {
   #home{
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+  .logo{
+    position: absolute;
   }
   .intro-text {
     font-size: 27pt;

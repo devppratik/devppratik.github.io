@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pratik Panda | Web Developer</title>
-        <link rel="icon" href="/portfolio/img/favicon.ico"type="image/x-icon">
-        <link rel="stylesheet" href="/portfolio/style/styles.css">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-        <script src="https://kit.fontawesome.com/7f76f54895.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/portfolio/style/hover.css">
-    </head>
-    <body>
-        <div id="loader-wrapper">
-            <div id="loader"></div>
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-          </div>
-        <div id="nav-bar">
-            <div class="logo-main">
-                <img src="/portfolio/img/logos/logo-01.png" alt="">
-            </div>
-            <nav class="nav">
-                <a class="home-link" href="/">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-                <!-- <a class="" href="/about.html"><i class="fas fa-user-alt"></i></a> -->
-                <a class="" href="/portfolio/skills.html">
-                    <i class="fas fa-cog"></i>
-                    <span>Skills</span>
-                </a>
-                <a class="" href="/portfolio/projects.html">
-                    <i class="fas fa-tasks"></i>
-                    <span>Projects</span>
-                </a>
-                <a class="" href="/portfolio/contact.html">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
-            </nav>
-            <div class="social flex">
-                        <a href="https://github.com/devppratik"><i class="fab fa-github"></i>
-                            <span>GitHUB</span></a>
-                        <a href="https://www.linkedin.com/in/pratik-panda-75a982175/">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>Linkedin</span></a> 
-            </div>
-            <a href="" id="mobile-link">
-                <i class="fas fa-bars"></i>
-            </a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Panda | Web Developer</title>
+    <!-- Style Sheets and Icons-->
+    <link rel="icon" href="/portfolio/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/portfolio/style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://kit.fontawesome.com/7f76f54895.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Pre-Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- Navigation Bar  -->
+    <div id="nav-bar">
+        <div class="logo-main">
+            <img src="/portfolio/img/logos/logo-01.png" alt="">
         </div>
-        <section class="cd-intro">
-            <div id="particles" class="canvas"></div>
-            <div class="cd-intro-content mask-2">
-                <div class="content-wrapper">
-                    <div class="flex">
-                        <div class="intro-text animate__animated animate__rotateInDownLeft animate__delay-5ms animate__slower">
-                            Hello, I'm
-                            <span class="highlight">Pratik Panda</span>
-                            <br>
-                            I'm a full-stack web developer.
-                        </div>
-                        <div class="button page-link animate__animated animate__backInUp animate__delay-1ms animate__slower">
-                            View my work
-                            <i class="far fa-arrow-alt-circle-right"></i>
-                        </div>
+        <nav class="nav">
+            <a class="home-link" href="/">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a class="" href="/portfolio/skills.html">
+                <i class="fas fa-cog"></i>
+                <span>Skills</span>
+            </a>
+            <a class="" href="/portfolio/projects.html">
+                <i class="fas fa-tasks"></i>
+                <span>Projects</span>
+            </a>
+            <a class="" href="/portfolio/contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="social flex">
+            <a href="https://github.com/devppratik"><i class="fab fa-github"></i>
+                <span>GitHUB</span></a>
+            <a href="https://www.linkedin.com/in/pratik-panda-75a982175/">
+                <i class="fab fa-linkedin-in"></i>
+                <span>Linkedin</span></a>
+        </div>
+        <a href="" id="mobile-link">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    
+    <!-- Home Page Content  -->
+    <section class="cd-intro">
+        <div id="particles" class="canvas"></div>
+        <div class="cd-intro-content mask-2">
+            <div class="content-wrapper">
+                <div class="flex">
+                    <div
+                        class="intro-text animate__animated animate__rotateInDownLeft animate__delay-5ms animate__slower">
+                        Hello, I'm
+                        <span class="highlight">Pratik Panda</span>
+                        <br>
+                        I'm a full-stack web developer.
+                    </div>
+                    <div
+                        class="button page-link animate__animated animate__backInUp animate__delay-1ms animate__slower">
+                        View my work
+                        <i class="far fa-arrow-alt-circle-right"></i>
                     </div>
                 </div>
             </div>
-        </section>
-        <script src="/portfolio/scripts/index.js"></script>
-        <script src="/portfolio/scripts/particles.js"></script>
-        <script>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+
+    <script src="/portfolio/scripts/index.js"></script>
+    <script src="/portfolio/scripts/particles.js"></script>
+    <script>
         particlesJS.load('particles', '/portfolio/particles.json', function () {
             console.log('callback - particles.js config loaded');
         });
-        </script>
-    </body>
+    </script>
+
+</body>
 </html>

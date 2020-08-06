@@ -57,7 +57,7 @@ if (curr === "/portfolio/contact.html") {
             message: form.message.value,
             date: firebase.firestore.Timestamp.fromDate(now)
         }
-        db.collection('orders').add(details).then(() => {
+        db.collection('orders').doc(`Order_${form.name.value}`).set(details).then(() => {
             // window.alert("Message added")
             //Show Popup
             popup.style.display = 'block';

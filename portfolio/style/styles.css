@@ -12,8 +12,7 @@
 */
 
 @import url(
-  //fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900
-);
+  //fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900 );
 
 * {
   margin: 0;
@@ -58,7 +57,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 10000;
 }
 .logo-main img {
   position: absolute;
@@ -211,17 +210,22 @@ a {
 }
 .skills-container {
   display: grid;
-  padding: 20px 30px 20px 30px;
+  /* flex-direction:row; */
+  gap: 4px;
+  grid-auto-flow: column;
   justify-content: space-evenly;
-  text-align: center;
+  align-content: center;
 }
 .skills-container .banner {
   background-color: rgb(29, 27, 27);
   color: #f3f3f3;
   font-family: "Raleway";
   text-transform: uppercase;
-  width: 120px;
-  height: 300px;
+  width: 125px;
+  height: 400px;
+  padding: 12px;
+  text-align: center;
+  display: inline-block;
   font-size: 12px;
   font-weight: 700;
   box-shadow: 0 -2px 15px rgba(0, 0, 0, 1);
@@ -233,24 +237,7 @@ a {
 .logo {
   width: 55px;
   font-size: 55px;
-}
-.set1 {
-  grid-column: 1;
-}
-.set2 {
-  grid-column: 2;
-}
-.set3 {
-  grid-column: 3;
-}
-.set4 {
-  grid-column: 4;
-}
-.set5 {
-  grid-column: 5;
-}
-.set6 {
-  grid-column: 6;
+  padding-bottom: 5px;
 }
 .skills-container img {
   max-width: 50px;
@@ -262,7 +249,8 @@ a {
 .skills-container .banner ul li {
   font-size: 12px;
   font-weight: 700;
-  padding: 0px 0 12px 0;
+  /* padding: 0px 0 12px 0; */
+  margin-bottom: 15px;
   color: #f3f3f3;
   font-family: "Raleway";
   text-transform: uppercase;
@@ -574,9 +562,15 @@ input:focus {
     grid-column: 3;
   }
   .skills-container {
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 0px 0px 0px;
+    display: grid;
+    padding: 20px;
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    justify-self: center;
+    justify-content: right;
+    justify-items: center;
+    /* align-content: center; */
   }
 
   .skills-container .banner {
@@ -767,9 +761,13 @@ input:focus {
     grid-column: 3;
   }
   .skills-container {
+    display: grid;
+    /* flex-direction:row; */
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 0px 0px 0px;
+    align-content: center;
   }
 
   .skills-container .banner {
@@ -830,9 +828,13 @@ input:focus {
     grid-column: 2;
   }
   .skills-container {
+    display: grid;
+    /* flex-direction:row; */
+    gap: 4px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 0px 0px 0px;
+    align-content: center;
   }
   .skills-container .banner {
     margin: 0 5px 30px 5px;
@@ -1174,7 +1176,7 @@ input:focus {
 #loader-wrapper .loader-section {
   position: fixed;
   top: 0;
-  background: #333;
+  background: rgb(34, 34, 34);
   width: 51%;
   height: 100%;
   z-index: 1000;

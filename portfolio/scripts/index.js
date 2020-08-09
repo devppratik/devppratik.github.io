@@ -16,34 +16,34 @@ ham.addEventListener('click', (e) => {
 });
 
 //Home Page Button Click Event
-if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+if (window.location.pathname === "/" || window.location.pathname === "/index") {
     const btn = document.querySelector('.button.page-link');
     btn.addEventListener('click', () => {
-        window.open("/portfolio/projects.html", name = "_self");
+        window.open("/projects", name = "_self");
     });
 }
 
 //Logo Click Event
 logo.addEventListener('click', () => {
-    window.open("/index.html", name = "_self");
+    window.open("/", name = "_self");
 })
 
 // Adding Active Class to Current Page
-if (curr === "/" || curr === "/index.html") {
+if (curr === "/" || curr === "/index") {
     home.classList.add("active")
 }
-else if (curr === "/portfolio/skills.html") {
+else if (curr === "/skills") {
     home.nextElementSibling.classList.add("active");
 }
-else if (curr === "/portfolio/projects.html") {
+else if (curr === "/projects") {
     home.nextElementSibling.nextElementSibling.classList.add("active");
 }
-else if (curr === "/portfolio/contact.html") {
+else if (curr === "/contact") {
     home.nextElementSibling.nextElementSibling.nextElementSibling.classList.add("active");
 }
 
 // Contact Form Event
-if (curr === "/portfolio/contact.html") {
+if (curr === "/contact") {
     const form = document.querySelector('.contact-form');
     const popup = document.querySelector('.popup-wrapper');
     const close = document.querySelector('.popup-close')

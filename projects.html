@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/portfolio/style/styles.css">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7f76f54895.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,6 +31,10 @@
             <a class="home-link" href="/">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
+            </a>
+            <a class="" href="/about">
+                <i class="fas fa-user"></i>
+                <span>About</span>
             </a>
             <a class="" href="/skills">
                 <i class="fas fa-cog"></i>
@@ -55,7 +60,7 @@
             <i class="fas fa-bars"></i>
         </a>
     </div>
-    
+
     <!-- Projects Page -->
     <section id="project">
         <div class="heading">MY Projects</div>
@@ -64,9 +69,9 @@
             <a href="/portfolio/contact.html">contact me</a>
         </p>
         <div class="card-container">
-        <!-- Projects Begin from Here -->
+            <!-- Projects Begin from Here -->
             <!-- Project 1 -->
-            <div class="card animate__animated animate__zoomIn animate__delay-1s">
+            <div class="card" data-aos="zoom-in" data-aos-delay="1000">
                 <img src="/portfolio/img/project_myportfolio.png" alt="" class="pro-img" style="height: 230px;">
                 <div class="tags">
                     <i class="mdi mdi-card-account-details-outline"></i>
@@ -89,17 +94,40 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="card animate__animated animate__zoomIn animate__delay-1s">
+            <div class="card" data-aos="zoom-in" data-aos-delay="1000">
+                <img src="/portfolio/img/App-Landing-Template-Page-Project.jpg" alt="" class="pro-img" style="height: 230px;">
+                <div class="tags">
+                    <i class="mdi mdi-card-dashboard"></i>
+                    Side Project
+                </div>
+                <p class="desc">Landing Page</p>
+                <div class="pro-tool">
+                    <div class="ptool">jQuery</div>
+                    <div class="ptool">SASS</div>
+                </div>
+                <div class="links">
+                    <button>
+                        <a href="https://github.com/devppratik/App-Landing-Page" target="_blank">View on
+                            Github</a>
+                    </button>
+                    <button>
+                        <a href="https://devppratik.github.io/portfolio/App-Landing-Page-Template/index.html">View Details</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card" data-aos="zoom-in" data-aos-delay="1000">
                 <img src="/portfolio/img/under-dev.png" alt="" class="pro-img">
                 <div class="tags">
                     <i class="mdi mdi-hammer-wrench"></i>
                     In Development
                 </div>
-                <p class="desc">Shopping Website with Full Payment Integration</p>
+                <p class="desc">Online Retail Website</p>
                 <div class="pro-tool">
                     <div class="ptool">Nodejs</div>
                     <div class="ptool">SCSS</div>
-                  </div>
+                </div>
                 <div class="links">
                     <button disabled>View on Github</button>
                     <button disabled>View Details</button>
@@ -131,11 +159,16 @@
                     <button disabled>View Details</button>
                 </div>
             </div> -->
-            <p style="text-align: center;">More Projects Brewing Up...</p>
+            <p style="text-align:center;">More Projects Brewing Up...</p>
     </section>
-    
+
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="/portfolio/scripts/index.js"></script>
 
 </body>
+
 </html>

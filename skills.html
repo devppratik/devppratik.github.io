@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratik Panda | Web Developer</title>
     <!-- Style Sheets and Icons -->
-    <link rel="icon" href="/portfolio/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/portfolio/img/favicon.ico" type="image/x-icon">    
     <link rel="stylesheet" href="/portfolio/style/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <script src="https://kit.fontawesome.com/7f76f54895.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 </head>
 
@@ -33,15 +34,19 @@
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a class="" href="/skills">
+            <a class="" href="/about.html">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a class="" href="/skills.html">
                 <i class="fas fa-cog"></i>
                 <span>Skills</span>
             </a>
-            <a class="" href="/projects">
+            <a class="" href="/projects.html">
                 <i class="fas fa-tasks"></i>
                 <span>Projects</span>
             </a>
-            <a class="" href="/contact">
+            <a class="" href="/contact.html">
                 <i class="fas fa-envelope"></i>
                 <span>Contact</span>
             </a>
@@ -62,7 +67,7 @@
     <section id="about">
         <div class="heading">SKILLS</div>
         <div class="spec-row">
-            <div class="spec animate__animated animate__fadeInLeft animate__delay-1s animate_faster">
+            <div class="spec" data-aos="fade-right" data-aos-delay="1000">
                 <div class="hexagon ">
                     <i class="mdi mdi-speedometer"></i>
                 </div>
@@ -71,7 +76,7 @@
                     Fast load times and lag free interaction, my highest priority.
                 </div>
             </div>
-            <div class="spec animate__animated animate__fadeInLeftBig animate__delay-2s animate_faster">
+            <div class="spec" data-aos="fade-right" data-aos-delay="1500">
                 <div class="hexagon">
                     <i class="mdi mdi-cellphone-link"></i>
                     <br>
@@ -81,7 +86,7 @@
                     My layouts will work on any device, big or small
                 </div>
             </div>
-            <div class="spec animate__animated animate__fadeInRightBig animate__delay-2s animate_faster">
+            <div class="spec" data-aos="fade-left" data-aos-delay="1500">
                 <div class="hexagon">
                     <i class="mdi mdi-lightbulb-on-outline"></i>
                 </div>
@@ -90,7 +95,7 @@
                     Strong preference for easy to use, intuitive UX/UI.
                 </div>
             </div>
-            <div class="spec animate__animated animate__fadeInRight animate__delay-1s animate_faster">
+            <div class="spec" data-aos="fade-left" data-aos-delay="1000">
                 <div class="hexagon">
                     <i class="mdi mdi-rocket-launch-outline"></i>
                     <br>
@@ -105,7 +110,7 @@
         <!-- Tech Stack Section -->
         <div class="heading">Tech Stack</div>
         <div class="skills-container">
-            <div class="banner animate__animated animate__slideInLeft animate__delay-1s">
+            <div class="banner" data-aos="fade-in" data-aos-delay="1000">
                 <div class="title">HTML-CSS</div>
                 <ul class="items">
                     <li>
@@ -157,7 +162,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="banner animate__animated animate__slideInLeft animate__delay-1s">
+            <div class="banner" data-aos="fade-in" data-aos-delay="1200">
+
                 <div class="title">Javascript</div>
                 <ul class="items">
                     <li>
@@ -182,7 +188,7 @@
                     
                 </ul>
             </div>
-            <div class="banner animate__animated animate__slideInLeft animate__delay-1s">
+            <div class="banner" data-aos="fade-in" data-aos-delay="1400">
                 <div class="title">Backend</div>
                 <ul class="items">
                     <li>
@@ -202,7 +208,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="banner animate__animated animate__slideInRight animate__delay-1s">
+            <div class="banner" data-aos="fade-in" data-aos-delay="1400">
+
                 <div class="title">Dev Tools</div>
                 <ul class="items">
                     <li>
@@ -224,7 +231,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="banner animate__animated animate__slideInRight animate__delay-1s">
+            <div class="banner" data-aos="fade-in" data-aos-delay="1200">
+
                 <div class="title">Design</div>
                 <ul class="items">
                     <li>
@@ -239,7 +247,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="banner animate__animated animate__slideInRight animate__delay-1s">
+            <div class="banner" data-aos="fade-in" data-aos-delay="1000">
+
                 <div class="title">Others</div>
                 <ul class="items">
                     <li>
@@ -263,6 +272,10 @@
     </section>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="/portfolio/scripts/index.js"></script>
 
 </body>

@@ -22,6 +22,12 @@ if (window.location.pathname === "/" || window.location.pathname === "/index") {
         window.open("/projects", name = "_self");
     });
 }
+if (window.location.pathname === "/about") {
+    const btn = document.querySelector('.msg');
+    btn.addEventListener('click', () => {
+        window.open("/contact", name = "_self");
+    });
+}
 
 //Logo Click Event
 logo.addEventListener('click', () => {
@@ -32,14 +38,17 @@ logo.addEventListener('click', () => {
 if (curr === "/" || curr === "/index") {
     home.classList.add("active")
 }
-else if (curr === "/skills") {
+else if (curr === "/about") {
     home.nextElementSibling.classList.add("active");
 }
-else if (curr === "/projects") {
+else if (curr === "/skills") {
     home.nextElementSibling.nextElementSibling.classList.add("active");
 }
-else if (curr === "/contact") {
+else if (curr === "/projects") {
     home.nextElementSibling.nextElementSibling.nextElementSibling.classList.add("active");
+}
+else if (curr === "/contact") {
+    home.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.add("active");
 }
 
 // Contact Form Event

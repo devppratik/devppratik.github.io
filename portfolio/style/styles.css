@@ -428,7 +428,74 @@ input:focus {
   right: 2%;
   width: 50vw;
 }
-
+/* About Me Pages */
+  .container{
+    padding:4vw 30px 3vw 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container p{
+    font-size: 18px;
+    font-family: 'Raleway';
+    line-height: 24px;
+    padding-bottom: 20px;
+    text-align: justify;
+  }
+  .container p span{
+    font-size: 18px;
+    font-weight: 700;
+    color: #04c2c9;
+    text-transform: uppercase;
+  }
+  .container .left{
+    max-width: 700px;
+    width: 100%;
+  }
+  #msg {
+    background-color: #000000;
+    border: 0px;
+    padding: 5px;
+    height: 40px;
+    color: aqua;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px aqua solid;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  #msg:hover {
+    background-color: aqua;
+    color: #000000;
+  }
+.title-ab{
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0px;
+  color: #04c2c9;
+  font-weight: 600;
+}
+.separator{
+  width: 50px;
+}
+.container ul li{
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+.container ul li:hover{
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+.container .date{
+  font-size: 20px;
+  font-weight: 700;
+  color: #6be5e9;  
+}
 /* Responsive Design Changes to Project */
 @media only screen and (max-width: 1200px) {
   .card-container {
@@ -792,6 +859,12 @@ input:focus {
   .card:nth-child(even) {
     grid-column: 2;
     grid-row: auto;
+  }
+  .container{
+    padding-left: 30px;
+  }
+  .container p{
+    text-align: left;
   }
 }
 @media only screen and (max-width: 540px) {
